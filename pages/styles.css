@@ -6,8 +6,8 @@ a {
   text-decoration: none;
 }
 
-.hero-hero,
-.under-hero-slide {
+.hero-tabs,
+.slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ h3 {
   opacity: 0.8;
 }
 
-.hero-hero-tab-container{
+.hero-tabs-container{
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -41,10 +41,14 @@ h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background: #fff;
   z-index: 100;
-
 }
 
-.hero-hero-tab{
+.hero-tabs-container--top{
+  position: fixed;
+  top: 0;
+}
+
+.hero-tab{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,14 +58,14 @@ h3 {
   font-size: 0.8rem;
 }
 
-.hero-hero-tab:hover{
+.hero-tab:hover{
   color: #fff;
   background: rgba(102, 177, 241, 0.6);
   transition: all 0.5s ease;
 }
 
 
-.hero-hero-tab-slider{
+.hero-tab-slider{
   position: absolute;
   bottom: 0;
   width: 0;
@@ -71,15 +75,13 @@ h3 {
 }
 
 @media (min-width: 800px){
-  .hero-hero,
-  .under-hero-slide h1{
+  .hero-tabs,
+  .slide h1{
     font-size: 3rem;
   }
 
-  .hero-hero,
-  .under-hero-slide h3{
+  .hero-tabs,
+  .slide h3{
     font-size: 1rem;
   }
 }
-
-/*  IM IN #general  */
